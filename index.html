@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="kidTalk">
+<head>
+	<title>Six-Year Old Simulator</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body ng-controller ="kidTalkController">
+	<h1>Six-Year Old Simulator</h1>
+	<h2>An App That Talks... A Lot</h2>
+
+	
+	<button type="submit" id="button" ng-click="randomWord()">Add Word</button>
+	<button type="submit" id="button" ng-click="randomPhrase()">Add Phrase</button>
+	<button type="submit" id="button" ng-click="randomFancyWord()">Add Fancy Word</button>
+	<button type="submit" id="button" ng-click="randomFancyPhrase()">Add Fancy Phrase</button>
+
+	
+
+	<ul>
+		<li ng-repeat="item in kidSaysThis" ng-class="item.decoration">{{item.kidSaysThis}}</li>
+	</ul>
+	<!-- <ul>
+		<li ng-repeat="word in kidSaysThis" </li>
+	</ul> 
+
+	-->
+
+
+<script src="lib/angular.min.js"></script>
+<script src="lib/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+</body>
+</html>

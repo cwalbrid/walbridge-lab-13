@@ -1,0 +1,27 @@
+/*ul {
+	display: inline;
+}*/
+
+li {
+	display: inline;
+}
+
+.classA {
+	color: green;
+}
+
+.classB {
+	color: red;
+}
+
+.classC {
+	color: blue;
+}
+
+.classD {
+	color: orange;
+}
+
+.classE {
+	color: pink;
+}
