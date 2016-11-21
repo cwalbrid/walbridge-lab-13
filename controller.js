@@ -2,13 +2,15 @@
 var app = angular.module("kidTalk", []);
 
 app.controller('kidTalkController', function($scope){
+	
 	$scope.kidSaysThis = [];
+	
 	$scope.words = ['no', 'me', 'I', 'gimme', 'cookie', 'candy', 'toy', 'mine', 'hungry', 'angry'];
+	$scope.phrases = ['my turn', 'go away', 'no fair', 'watch this', 'look out', 'that hurts', 'gimme that', 'no way', 'you stink', 'move over'];
+
 	$scope.dec = ['classA', 'classB', 'classC', 'classD', 'classE'];
 
-	$scope.phrases = ['my turn', 'go away', 'no fair', 'watch this', 'look out', 'that hurts', 'gimme that', 'no way', 'you stink', 'move over'];
-	
-	
+
 	$scope.randomWord = function(){
 		var item = {};
 		item.kidSaysThis= $scope.words[Math.floor(Math.random() * $scope.words.length)] + "! ";
