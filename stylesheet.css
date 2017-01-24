@@ -7,41 +7,54 @@ body{
 }
 
 #container{
-	/*display: flex;*/
+
 	justify-content: center;
 	height: 100%;
 	width: 100%;
 }
 
 #heading{
-	position: absolute;
+	/*position: absolute;*/
+	text-align: center;
+	margin: 0 auto;
+	height: 148px;
 	width: 600px;
-	left: 30%;
+	/*left: 30%;
+	top: 4%;*/
+	display: flex;
+	flex-direction: column;
+	/*border: solid white;*/
+	
 }
 
 #title{
 	color: #2D3047;
 	font-family: 'Schoolbell';
-	font-size:60px;
-	position: absolute;
-	margin: 0 0 0 0;
+	font-size: 60px;
+	margin: 0 auto;
+	/*position: absolute;*/
+
+
 }
 
 #byline{
 	color: #2D3047;
 	font-family: 'Indie Flower';
 	font-size: 30px;
-	position: absolute;
-	margin-top: 0 0 0 0;
+	/*position: absolute;*/
+	margin: 10px auto;
 	top:50px;
 	left: 120px;
+	
+	
 }
 
 #buttons{
-	position: absolute;
-	width: 200px;
-	top: 200px;
-	left: 50px;
+	/*position: absolute;*/
+	text-align: center;
+	margin: 2% auto;
+	width: 100%;
+	
 
 }
 
@@ -80,9 +93,22 @@ body{
 	outline: none;
 }
 
+
+
 #kid-speak{
 	color: #93B7BE;
-	position: absolute;
+	/*position: absolute;*/
+	/*border: solid 1px white;*/
+	margin: 0 auto;
+	padding: 40px;
+	top: 400px;
+	height: 365px;
+	width: 800px;
+	display: block;
+	border-radius: 20px;
+	background-color: #F0E6A6;
+	overflow-y: auto;
+
 }
 
 /*generator classes*/

@@ -13,17 +13,19 @@
 		<p id="byline">An App That Talks... A Lot</p>
 	</div>
 
+	
+	
+
+	<ul id="kid-speak">
+		<li ng-repeat="item in kidSaysThis" ng-class="item.decoration">{{item.kidSaysThis}}</li>
+	</ul>
+
 	<div id="buttons">
 		<button type="submit" id="add-word" ng-click="randomWord()">Add Word</button>
 		<button type="submit" id="add-phrase" ng-click="randomPhrase()">Add Phrase</button>
 		<button type="submit" id="add-fancy-word" ng-click="randomFancyWord()">Add Fancy Word</button>
 		<button type="submit" id="add-fancy-phrase" ng-click="randomFancyPhrase()">Add Fancy Phrase</button>
 	</div>
-	
-
-	<ul id="kid-speak">
-		<li ng-repeat="item in kidSaysThis" ng-class="item.decoration">{{item.kidSaysThis}}</li>
-	</ul>
 	
 </div>
 
