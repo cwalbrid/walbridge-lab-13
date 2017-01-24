@@ -3,24 +3,29 @@
 <head>
 	<title>Six-Year Old Simulator</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Schoolbell|Open+Sans" rel="stylesheet">
 </head>
-<body ng-controller ="kidTalkController">
-	<h1>Six-Year Old Simulator</h1>
-	<h2>An App That Talks... A Lot</h2>
-
+<body>
+<div id="container" ng-controller="kidTalkController">
 	
-	<button type="submit" id="button" ng-click="randomWord()">Add Word</button>
-	<button type="submit" id="button" ng-click="randomPhrase()">Add Phrase</button>
-	<button type="submit" id="button" ng-click="randomFancyWord()">Add Fancy Word</button>
-	<button type="submit" id="button" ng-click="randomFancyPhrase()">Add Fancy Phrase</button>
+	<div id="heading">	
+		<p id="title">Six-Year-Old Simulator</p>
+		<p id="byline">An App That Talks... A Lot</p>
+	</div>
 
+	<div id="buttons">
+		<button type="submit" id="add-word" ng-click="randomWord()">Add Word</button>
+		<button type="submit" id="add-phrase" ng-click="randomPhrase()">Add Phrase</button>
+		<button type="submit" id="add-fancy-word" ng-click="randomFancyWord()">Add Fancy Word</button>
+		<button type="submit" id="add-fancy-phrase" ng-click="randomFancyPhrase()">Add Fancy Phrase</button>
+	</div>
 	
 
-	<ul>
+	<ul id="kid-speak">
 		<li ng-repeat="item in kidSaysThis" ng-class="item.decoration">{{item.kidSaysThis}}</li>
 	</ul>
 	
-
+</div>
 
 <script src="lib/angular.min.js"></script>
 <script src="lib/angular-route.min.js"></script>

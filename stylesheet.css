@@ -2,6 +2,69 @@
 	display: inline;
 }*/
 
+body{
+	background-color: #A799B7;
+}
+
+#container{
+	/*display: flex;*/
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+#heading{
+	position: absolute;
+	width: 600px;
+	left: 30%;
+}
+
+#title{
+	color: #2D3047;
+	font-family: 'Schoolbell';
+	font-size:60px;
+	position: absolute;
+	margin: 0 0 0 0;
+}
+
+#byline{
+	color: #2D3047;
+	font-family: 'Indie Flower';
+	font-size: 30px;
+	position: absolute;
+	margin-top: 0 0 0 0;
+	top:50px;
+	left: 120px;
+}
+
+#buttons{
+	position: absolute;
+	width: 120px;
+
+}
+
+#buttons button{
+	color: #E0CA3C;
+	background-color: #048A81;
+	
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+	
+
+	box-sizing: border-box;
+	box-shadow: 2px 2px 0 #2D3047;
+	border: none;
+	border-radius: 2px;
+	margin: 5px auto;
+
+}
+
+#kid-speak{
+	color: #93B7BE;
+	position: absolute;
+}
+
+/*generator classes*/
 li {
 	display: inline;
 }
